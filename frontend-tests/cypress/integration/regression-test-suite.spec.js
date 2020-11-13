@@ -58,7 +58,7 @@ describe ('Regression test suite', function(){
     })
 
         // This is pre-conditions
-    it('Perform valid login create new client', function(){
+    it('Perform valid login and create new client', function(){
         cy.visit('http://localhost:3000')
         cy.title().should('include', 'Hotel')
         cy.contains('Login')
